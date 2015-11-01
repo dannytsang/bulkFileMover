@@ -3,4 +3,4 @@ REM specify a text file with relative (to this script) or absolute file paths. T
 REM ---------------------------------
 REM parameter 1: location of text file
 REM parameter 2: folder to move files to
-for /F "usebackq tokens=* delims=," %%G in ("%~1") do move "%%G" "%~2"
+for /F "usebackq tokens=* delims=," %%G in ("%~1") do move "%%G" "%~2\"
